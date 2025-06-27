@@ -1,0 +1,20 @@
+/*https://chatgpt.com/*/
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+.simple-footer {
+    background-color: #808080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}

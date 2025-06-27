@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Make new category
+{% endblock %}
+
+{% block main %}
+<div class="bs-secondary-bg-rgb">
+    <h2>Make new category</h2>
+
+</div>
+<form action="/category" method="POST">
+
+    <div class="mb-3">
+        <input type="text" class="form-control"  name="makecategory" autocomplete="off" placeholder="new category">
+        <button type="submit" class="btn btn-dark">Insert</button>
+    </div>
+
+  </form>
+
+
+
+{% endblock %}

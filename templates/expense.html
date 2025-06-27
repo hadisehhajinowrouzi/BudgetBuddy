@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Expenses table
+{% endblock %}
+
+{% block main %}
+
+<div class="bs-secondary-bg-rgb">
+    <h2> Expenses table </h2>
+</div>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Category</th>
+        <th scope="col">Explanation</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Date</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      {% for each in expenses %}
+      <tr>
+        <td>{{ each["category_name"] }}</td>
+        <td>{{ each["name"]}}</td>
+        <td>{{ each["amount"]}}</td>
+        <td>{{ each["date"]}}</td>
+
+      </tr>
+      {% endfor %}
+
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="col">TOTAL</th>
+        <th scope="col"></th>
+        <th scope="col">{{ total_money }}</th>
+        <th scope="col"></th>
+      </tr>
+    </tfoot>
+  </table>
+
+
+{% endblock %}
